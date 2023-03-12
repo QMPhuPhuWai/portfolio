@@ -802,16 +802,55 @@ Width Percent
     text-align: center;
 }
 
+.main-ttl.yel {
+    color: #000;
+    -webkit-text-stroke: 1px #fcdc01;
+}
+
+.sub-ttl.yel {
+    color: #fcdc01;
+}
+
+@media screen and (max-width: 768px) {
+    .main-ttl {
+        font-size: 60px;
+    }
+
+    .sub-ttl {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-ttl {
+        font-size: 55px;
+    }
+
+    .sub-ttl {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-ttl {
+        font-size: 45px;
+    }
+
+    .sub-ttl {
+        font-size: 18px;
+    }
+}
+
 /* ===============================
 Footer
 =============================== */
 .footer-sec {
-    background: #000;
+    background: #fff;
 }
 
 .copy-txt {
     font-family: 'Acumin Pro';
-    color: #fff;
+    color: #000;
     text-align: center;
     padding: 32px 0;
 }
