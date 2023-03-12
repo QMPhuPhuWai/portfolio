@@ -1,0 +1,888 @@
+@charset "utf-8";
+
+html {
+    text-rendering: optimizeLegibility !important;
+}
+
+body {
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    letter-spacing: 0;
+
+    color: #767676;
+    background: #fff;
+
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+}
+
+:root {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+.sp-460 {
+    display: none;
+}
+
+.tel {
+    pointer-events: none;
+}
+
+.pc-460 {
+    display: block;
+}
+
+.br-360-pc {
+    display: block;
+}
+
+.br-360-sp {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .tel {
+        pointer-events: auto;
+    }
+
+    body {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .sp-460 {
+        display: block;
+    }
+
+    .pc-460 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .br-360-pc {
+        display: none;
+    }
+
+    .br-360-sp {
+        display: block;
+    }
+}
+
+/* ===============================
+Text align
+=============================== */
+.txt-left {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-justify {
+    text-align: justify !important;
+}
+
+.txt-underline {
+    text-decoration: underline !important;
+    text-underline-offset: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .txt-left-sp {
+        text-align: left;
+    }
+
+    .txt-center-sp {
+        text-align: center;
+    }
+
+    .txt-right-sp {
+        text-align: right;
+    }
+}
+
+/* ===============================
+Color
+=============================== */
+
+.g-color {
+    color: #767676 !important;
+}
+
+.b-color {
+    color: #333333 !important;
+}
+
+.w-color {
+    color: #fff !important;
+}
+
+.red-color {
+    color: #E2001A !important;
+}
+
+.green-color {
+    color: #1B9377 !important;
+}
+
+.red-color-b {
+    color: #E2001A !important;
+    font-family: "ヒラギノUD角ゴ Std W6", sans-serif;
+}
+
+/* ===============================
+Background Color
+=============================== */
+.bg-main {
+    background: #f0f4b9;
+}
+
+.bg-sub {
+    background: #f6e863;
+}
+
+.bg-b {
+    background: #000;
+}
+
+.bg-w {
+    background: #fff;
+}
+
+.bg-gray {
+    background: #f8f8f8;
+}
+
+@media screen and (max-width: 768px) {}
+
+/* ===============================
+Line Height
+=============================== */
+.li-he1 {
+    line-height: 1 !important;
+}
+
+.li-he1-2 {
+    line-height: 1.2 !important;
+}
+
+.li-he1-3 {
+    line-height: 1.3 !important;
+}
+
+.li-he1-4 {
+    line-height: 1.4 !important;
+}
+
+.li-he1-5 {
+    line-height: 1.5 !important;
+}
+
+.li-he1-6 {
+    line-height: 1.6 !important;
+}
+
+.li-he1-7 {
+    line-height: 1.7 !important;
+}
+
+.li-he1-8 {
+    line-height: 1.8 !important;
+}
+
+.li-he1-9 {
+    line-height: 1.9 !important;
+}
+
+.li-he2 {
+    line-height: 2 !important;
+}
+
+.li-he2-1 {
+    line-height: 2.1 !important;
+}
+
+.li-he2-2 {
+    line-height: 2.2 !important;
+}
+
+.li-he2-3 {
+    line-height: 2.3 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .li-he1-sp {
+        line-height: 1 !important;
+    }
+
+    .li-he1-2-sp {
+        line-height: 1.2 !important;
+    }
+
+    .li-he1-3-sp {
+        line-height: 1.3 !important;
+    }
+
+    .li-he1-4-sp {
+        line-height: 1.4 !important;
+    }
+
+    .li-he1-5-sp {
+        line-height: 1.5 !important;
+    }
+
+    .li-he1-6-sp {
+        line-height: 1.6 !important;
+    }
+
+    .li-he1-7-sp {
+        line-height: 1.7 !important;
+    }
+}
+
+/* ===============================
+Display
+=============================== */
+.dis-block {
+    display: block !important;
+}
+
+.dis-inline {
+    display: inline !important;
+}
+
+.dis-inblock {
+    display: inline-block !important;
+}
+
+.po-re {
+    position: relative !important;
+}
+
+.po-ab {
+    position: absolute !important;
+}
+
+.po-fix {
+    position: fixed !important;
+}
+
+@media screen and (max-width: 768px) {
+    .dis-block-sp {
+        display: block !important;
+    }
+
+    .dis-inline-sp {
+        display: inline !important;
+    }
+
+    .dis-inblock-sp {
+        display: inline-block !important;
+    }
+
+    .po-re-sp {
+        position: relative !important;
+    }
+
+    .po-ab-sp {
+        position: absolute !important;
+    }
+
+    .po-fix-sp {
+        position: fixed !important;
+    }
+}
+
+/* ===============================
+Display flex Setting
+=============================== */
+.dis-flex {
+    display: flex !important;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.f-justify-center {
+    justify-content: center;
+}
+
+.f-space-between {
+    justify-content: space-between;
+}
+
+.f-ali-center {
+    align-items: center;
+}
+
+.f-ali-end {
+    align-items: end;
+}
+
+.f-dir-reverse {
+    flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    .dis-flex-sp {
+        display: flex !important;
+    }
+
+    .f-dir-reverse-sp {
+        flex-direction: column-reverse;
+    }
+}
+
+/* ===============================
+Display Grid Setting
+=============================== */
+.dis-grid {
+    display: grid !important;
+}
+
+.grid-one {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-five {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.g-justify-end {
+    justify-self: end;
+}
+
+.g-ali-center {
+    align-self: center;
+}
+
+.g-align-end {
+    align-self: end;
+}
+
+@media screen and (max-width: 768px) {
+    .dis-grid-sp {
+        display: grid !important;
+    }
+
+    .grid-one-sp {
+        display: block !important;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-two-sp {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-three-sp {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===============================
+Gap
+=============================== */
+.gap5 {
+    gap: 5px !important;
+}
+
+.gap10 {
+    gap: 10px !important;
+}
+
+.gap15 {
+    gap: 15px !important;
+}
+
+.gap16 {
+    gap: 16px !important;
+}
+
+.gap17 {
+    gap: 17px !important;
+}
+
+.gap18 {
+    gap: 18px !important;
+}
+
+.gap19 {
+    gap: 19px !important;
+}
+
+.gap20 {
+    gap: 20px !important;
+}
+
+.gap22 {
+    gap: 22px !important;
+}
+
+.gap24 {
+    gap: 24px !important;
+}
+
+.gap25 {
+    gap: 25px !important;
+}
+
+.gap30 {
+    gap: 30px !important;
+}
+
+.gap35 {
+    gap: 35px !important;
+}
+
+.gap40 {
+    gap: 40px !important;
+}
+
+.gap45 {
+    gap: 45px !important;
+}
+
+.gap50 {
+    gap: 50px !important;
+}
+
+.gap100 {
+    gap: 100px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .gap5-sp {
+        gap: 5px !important;
+    }
+
+    .gap10-sp {
+        gap: 10px !important;
+    }
+
+    .gap15-sp {
+        gap: 15px !important;
+    }
+
+    .gap16-sp {
+        gap: 16px !important;
+    }
+
+    .gap17-sp {
+        gap: 17px !important;
+    }
+
+    .gap18-sp {
+        gap: 18px !important;
+    }
+
+    .gap19-sp {
+        gap: 19px !important;
+    }
+
+    .gap20-sp {
+        gap: 20px !important;
+    }
+
+    .gap22-sp {
+        gap: 22px !important;
+    }
+
+    .gap24-sp {
+        gap: 24px !important;
+    }
+
+    .gap25-sp {
+        gap: 25px !important;
+    }
+
+    .gap30-sp {
+        gap: 30px !important;
+    }
+}
+
+/* ===============================
+Float
+=============================== */
+.float-lf {
+    float: left !important;
+}
+
+.float-rg {
+    float: right !important;
+}
+
+.float-n {
+    float: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .float-n-sp {
+        float: none !important;
+    }
+}
+
+/* ===============================
+Section container
+=============================== */
+.wrapper {
+    position: relative;
+}
+
+section * {
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1396px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.m-w1034 {
+    max-width: 1034px;
+    margin: 0 auto;
+}
+
+.m-w824 {
+    max-width: 824px;
+    margin: 0 auto;
+}
+
+.m-w670 {
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.m-w618 {
+    max-width: 618px;
+    margin: 0 auto;
+}
+
+.w-auto {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* ===============================
+Width Percent
+=============================== */
+.wth-10 {
+    width: 10%;
+}
+
+.wth-15 {
+    width: 15%;
+}
+
+.wth-20 {
+    width: 20%;
+}
+
+.wth-25 {
+    width: 25%;
+}
+
+.wth-30 {
+    width: 30%;
+}
+
+.wth-35 {
+    width: 35%;
+}
+
+.wth-40 {
+    width: 40%;
+}
+
+.wth-45 {
+    width: 45%;
+}
+
+.wth-50 {
+    width: 50%;
+}
+
+.wth-55 {
+    width: 55%;
+}
+
+.wth-60 {
+    width: 60%;
+}
+
+.wth-62 {
+    width: 62%;
+}
+
+.wth-65 {
+    width: 65%;
+}
+
+.wth-70 {
+    width: 70%;
+}
+
+.wth-75 {
+    width: 75%;
+}
+
+.wth-80 {
+    width: 80%;
+}
+
+.wth-85 {
+    width: 85%;
+}
+
+.wth-90 {
+    width: 90%;
+}
+
+.wth-95 {
+    width: 95%;
+}
+
+.wth-100 {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .wth-10-sp {
+        width: 10%;
+    }
+
+    .wth-15-sp {
+        width: 15%;
+    }
+
+    .wth-20-sp {
+        width: 20%;
+    }
+
+    .wth-25-sp {
+        width: 25%;
+    }
+
+    .wth-30-sp {
+        width: 30%;
+    }
+
+    .wth-35-sp {
+        width: 35%;
+    }
+
+    .wth-40-sp {
+        width: 40%;
+    }
+
+    .wth-45-sp {
+        width: 45%;
+    }
+
+    .wth-50-sp {
+        width: 50%;
+    }
+
+    .wth-55-sp {
+        width: 55%;
+    }
+
+    .wth-60-sp {
+        width: 60%;
+    }
+
+    .wth-65-sp {
+        width: 65%;
+    }
+
+    .wth-70-sp {
+        width: 70%;
+    }
+
+    .wth-75-sp {
+        width: 75%;
+    }
+
+    .wth-80-sp {
+        width: 80%;
+    }
+
+    .wth-85-sp {
+        width: 85%;
+    }
+
+    .wth-90-sp {
+        width: 90%;
+    }
+
+    .wth-95-sp {
+        width: 95%;
+    }
+
+    .wth-100-sp {
+        width: 100%;
+    }
+}
+
+/* ===============================
+Main Title
+=============================== */
+.main-ttl {
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: "ヒラギノUD角ゴ Std W4", sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+}
+
+.main-ttl span {
+    font-size: 1.5rem;
+    color: #E2001A;
+    font-family: din-2014, sans-serif;
+    display: block;
+}
+
+.main-ttl::before {
+    content: "";
+    background: url(../img/common/h2_l.png)no-repeat;
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-size: contain;
+}
+
+.main-ttl::after {
+    content: "";
+    background: url(../img/common/h2_r.png)no-repeat;
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-size: contain;
+}
+
+.sub-ttl {
+    font-size: 3.6rem;
+    color: #E2001A;
+    text-align: center;
+}
+
+.sub-ttl span {
+    font-size: 2.4rem;
+    display: block;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .main-ttl {
+        font-size: 2.2rem;
+        padding: 0 30px;
+    }
+
+    .main-ttl span {
+        font-size: 1.2rem;
+    }
+
+    .main-ttl::before {
+        width: 16px;
+        height: 20px;
+    }
+
+    .main-ttl::after {
+        width: 16px;
+        height: 20px;
+    }
+
+    .sub-ttl span {
+        font-size: 1.8rem;
+    }
+
+    .sub-ttl {
+        font-size: 2.6rem;
+    }
+
+    .sub-sub-ttl {
+        font-size: 1.5rem;
+    }
+
+    .app-time .app-time-list {
+        display: block;
+    }
+
+    .app-time .app-time-list li {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ===============================
+Footer
+=============================== */
+.footer-sec {
+    background: #333333;
+}
+
+.copy-txt {
+    font-family: 'Acumin Pro';
+    color: #8D8D8D;
+    text-align: center;
+    padding: 32px 0;
+}
