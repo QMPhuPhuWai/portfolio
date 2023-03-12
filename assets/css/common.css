@@ -290,6 +290,10 @@ Display
     display: inline-block !important;
 }
 
+.dis-none {
+    display: none !important;
+}
+
 .po-re {
     position: relative !important;
 }
@@ -313,6 +317,10 @@ Display
 
     .dis-inblock-sp {
         display: inline-block !important;
+    }
+
+    .dis-none-sp {
+        display: none !important;
     }
 
     .po-re-sp {
@@ -585,29 +593,29 @@ section * {
     font-weight: 400;
 }
 
+.h-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .container {
-    max-width: 1396px;
-    padding: 0 15px;
+    max-width: 1440px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
-.m-w1034 {
-    max-width: 1034px;
+.m-w1200 {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.m-w824 {
-    max-width: 824px;
+.m-w860 {
+    max-width: 860px;
     margin: 0 auto;
 }
 
-.m-w670 {
-    max-width: 670px;
-    margin: 0 auto;
-}
-
-.m-w618 {
-    max-width: 618px;
+.m-w1000 {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -777,101 +785,22 @@ Width Percent
     }
 }
 
-/* ===============================
-Main Title
-=============================== */
 .main-ttl {
-    font-size: 2.8rem;
-    text-align: center;
-    font-family: "ヒラギノUD角ゴ Std W4", sans-serif;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 0 50px;
-    position: relative;
-}
-
-.main-ttl span {
-    font-size: 1.5rem;
-    color: #E2001A;
-    font-family: din-2014, sans-serif;
-    display: block;
-}
-
-.main-ttl::before {
-    content: "";
-    background: url(../img/common/h2_l.png)no-repeat;
-    width: 20px;
-    height: 24px;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    background-size: contain;
-}
-
-.main-ttl::after {
-    content: "";
-    background: url(../img/common/h2_r.png)no-repeat;
-    width: 20px;
-    height: 24px;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    background-size: contain;
+    font-size: 85px;
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+    font-family: "Noto Sans JP";
+    font-weight: bold;
 }
 
 .sub-ttl {
-    font-size: 3.6rem;
-    color: #E2001A;
+    font-size: 30px;
+    color: #333;
+    -webkit-text-stroke: inherit;
+    font-weight: 300;
+    display: block;
     text-align: center;
 }
-
-.sub-ttl span {
-    font-size: 2.4rem;
-    display: block;
-    color: #333;
-}
-
-@media screen and (max-width: 768px) {
-    .main-ttl {
-        font-size: 2.2rem;
-        padding: 0 30px;
-    }
-
-    .main-ttl span {
-        font-size: 1.2rem;
-    }
-
-    .main-ttl::before {
-        width: 16px;
-        height: 20px;
-    }
-
-    .main-ttl::after {
-        width: 16px;
-        height: 20px;
-    }
-
-    .sub-ttl span {
-        font-size: 1.8rem;
-    }
-
-    .sub-ttl {
-        font-size: 2.6rem;
-    }
-
-    .sub-sub-ttl {
-        font-size: 1.5rem;
-    }
-
-    .app-time .app-time-list {
-        display: block;
-    }
-
-    .app-time .app-time-list li {
-        margin-bottom: 30px;
-    }
-}
-
 
 /* ===============================
 Footer
