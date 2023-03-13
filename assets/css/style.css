@@ -10,10 +10,17 @@ header {
     left: 0;
 }
 
+.overflow-hide {
+    overflow: hidden;
+}
+
 .header-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    height: 80px;
+    background: #000;
 }
 
 .m-logo {
@@ -81,6 +88,10 @@ header {
     font-size: 40px;
 }
 
+.sp {
+    display: none;
+}
+
 @media screen and (max-width : 1080px) {
 
     .mv-img img {
@@ -109,6 +120,10 @@ header {
 }
 
 @media screen and (max-width : 768px) {
+    .sp {
+        display: block;
+    }
+
     .mv-div {
         display: block;
         padding: 70px 20px 100px;
@@ -121,6 +136,8 @@ header {
 
     .typed-cursor {
         font-size: 40px;
+
+        display: none;
     }
 
     .mv-txt {
@@ -142,6 +159,71 @@ header {
 
     .position-txt {
         font-size: 35px;
+    }
+
+    .navi-div {
+        position: absolute;
+        background: #000;
+        top: -100vh;
+        left: 0px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        transition: all .5s linear;
+        z-index: -1;
+    }
+
+    .navi-div.sp_menu_open {
+        top: 80px;
+        transition: all .5s linear;
+    }
+
+    .navi-div .navi {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .navi-div .navi li a {
+        font-size: 25px;
+    }
+
+    .navi-div .navi .contact-sty a {
+        padding: 15px;
+    }
+
+    .menu {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .menu .line {
+        width: 40px;
+        height: 5px;
+        background: gold;
+        margin: 5px 0px;
+        transition: all .3s linear;
+    }
+
+    .menu .line.rotate-left {
+        background: gold;
+        transform: translateY(-2px) rotate(45deg);
+        transform-origin: top left;
+        transition: all .2s linear;
+    }
+
+    .hide {
+        opacity: 0;
+        transition: all .2s linear;
+    }
+
+    .menu .line.rotate-right {
+        background: gold;
+        transform: translateY(3px) rotate(-45deg);
+        transform-origin: bottom left;
+        transition: all .2s linear;
     }
 
 }
@@ -530,3 +612,167 @@ header {
         padding-bottom: 30px;
     }
 }
+
+/* personal info start */
+.personal-sec {
+    background-color: #000;
+    padding: 50px 0px;
+
+}
+
+.personal-sec .main-ttl {
+    color: #000;
+    -webkit-text-stroke: 1px #fcdc01;
+}
+
+.personal-sec .sub-ttl {
+    color: #fcdc01;
+}
+
+.personal-sec .per-info-box {
+    max-width: 860px;
+    margin: 50px auto;
+    padding: 60px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.personal-sec .per-info-box .infos div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.personal-sec .per-info-box p {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: left;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+.per-info-box .info-sns img {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.per-info-box .info-sns {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.infos a {
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.infos .m-wd {
+    width: 30px;
+}
+
+.infos .m-wd1 {
+    width: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .personal-sec .main-ttl {
+        font-size: 60px;
+    }
+
+    .personal-sec .sub-ttl {
+        color: #fcdc01;
+    }
+
+
+    .personal-sec .per-info-box {
+        margin: 30px auto 20px;
+        padding: 30px;
+    }
+
+    .per-info-box .info-sns img {
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    .per-info-box .info-sns {
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .personal-sec .per-info-box p {
+        font-size: 22px;
+    }
+
+    .infos a {
+        font-size: 22px;
+    }
+
+    .personal-sec .per-info-box .infos div {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .personal-sec .per-info-box p {
+        font-size: 16px;
+    }
+
+    .personal-sec .main-ttl {
+        font-size: 40px;
+    }
+
+    .personal-sec .sub-ttl {
+        font-size: 20px;
+    }
+
+    .personal-sec .per-info-box {
+        padding: 30px 15px;
+    }
+
+    .infos .m-wd {
+        width: 20px;
+    }
+
+    .infos .m-wd1 {
+        width: 30px;
+    }
+
+    .infos a {
+        font-size: 16px;
+    }
+
+    .personal-sec .per-info-box .infos div {
+        gap: 10px;
+    }
+
+    .m-logo a img {
+        width: 170px;
+    }
+
+}
+
+@media screen and (max-width: 374px) {
+    .personal-sec .per-info-box p {
+        font-size: 14px;
+    }
+
+    .infos a {
+        font-size: 14px;
+    }
+
+    .personal-sec .per-info-box {
+        padding: 30px 0px 30px 8px;
+    }
+
+    .m-logo a img {
+        width: 165px;
+    }
+
+}
+
+/* personal info end */
