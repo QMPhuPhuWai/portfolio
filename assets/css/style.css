@@ -780,6 +780,14 @@ header {
         width: 165px;
     }
 
+    .infos .m-wd {
+        width: 17px;
+    }
+
+    .personal-sec .per-info-box .infos div {
+        gap: 8px;
+    }
+
 }
 
 /* personal info end */
