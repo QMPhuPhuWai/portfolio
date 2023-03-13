@@ -679,6 +679,13 @@ header {
     width: 40px;
 }
 
+.anchorH {
+    display: block;
+    visibility: hidden;
+    margin-top: -60px;
+    height: 60px;
+}
+
 @media screen and (max-width:768px) {
     .personal-sec .main-ttl {
         font-size: 60px;
