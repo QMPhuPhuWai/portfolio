@@ -8,6 +8,7 @@ header {
     background: #000;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 
 .overflow-hide {
@@ -226,9 +227,16 @@ header {
         transition: all .2s linear;
     }
 
+    .mv-sec {
+        min-height: 825px;
+    }
+
 }
 
 @media screen and (max-width : 500px) {
+    .mv-sec {
+        min-height: 766px;
+    }
 
     .typed-cursor {
         font-size: 23px;
@@ -253,6 +261,17 @@ header {
 
     .mv-div {
         padding: 70px 10px 100px;
+    }
+
+}
+
+@media screen and (max-width : 420px) {
+    .mv-div {
+        padding: 70px 10px 75px;
+    }
+
+    .mv-sec {
+        min-height: 727px;
     }
 
 }
@@ -763,7 +782,7 @@ header {
 
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 383px) {
     .personal-sec .per-info-box p {
         font-size: 14px;
     }
