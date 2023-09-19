@@ -140,6 +140,9 @@ Text align
 /* ===============================
 Color
 =============================== */
+.w-color {
+    color: #fff !important;
+}
 
 .g-color {
     color: #767676 !important;
@@ -164,6 +167,10 @@ Color
 .red-color-b {
     color: #E2001A !important;
     font-family: "ヒラギノUD角ゴ Std W6", sans-serif;
+}
+
+.y-color {
+    color: #fcdc01;
 }
 
 /* ===============================
